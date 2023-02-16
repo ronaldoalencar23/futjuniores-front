@@ -113,6 +113,7 @@ export function CreatePlayer() {
           onChange={handleChange}
         />
         <button>Cadastrar</button>
+        navigate("/");
       </form>
     </>
   );

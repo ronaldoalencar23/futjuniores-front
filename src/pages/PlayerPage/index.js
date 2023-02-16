@@ -44,14 +44,37 @@ export function PlayerPage() {
 
   return (
     <>
+      <img src={player.image} alt={player.name} />
       <h1>{player.name}</h1>
+
+      <p>
+        <b>Características:</b> {player.characteristics}
+      </p>
+      <p>
+        <b>Posição:</b> {player.position}
+      </p>
+      <p>
+        <b>Idade:</b> {player.age} anos
+      </p>
+      <p>
+        <b>Altura:</b> {player.height}m
+      </p>
+      <p>
+        <b>Pé:</b> {player.foot}
+      </p>
+      <p>
+        <b>Nacionalidade:</b> {player.nationality}
+      </p>
+      <p>
+        <b>Tempo de contrato:</b> {player.contractTime} anos
+      </p>
+      <p>
+        <b>Valor de mercado:</b> {player.marketValue} mi. €
+      </p>
       <Link to={`/edit-player/${params.playerId}`}>
         <button>Editar</button>
       </Link>
       <button onClick={handleToast}>Deletar</button>
-      <p>{player.characteristics}</p>
-      <img src={player.image} alt={player.name} />
-      <p>Valor de mercado: {player.marketValue} mi. €</p>
     </>
   );
 }
