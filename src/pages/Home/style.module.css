@@ -1,6 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  background-image: irl (https://i.imgur.com/kBdzOsl.jpeg);
 }
 
 .link {

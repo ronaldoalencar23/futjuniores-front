@@ -35,7 +35,7 @@ export function CreatePlayer() {
 
   return (
     <>
-      <h1>Criar cadastro de novo jogador</h1>
+      <h2>Criar cadastro de novo jogador</h2>
 
       <form onSubmit={handleSubmit}>
         <label htmlFor="input-player-name">Nome do jogador</label>
@@ -113,7 +113,7 @@ export function CreatePlayer() {
           onChange={handleChange}
         />
         <button>Cadastrar</button>
-        navigate("/");
+        {/* {navigate("/")} */}
       </form>
     </>
   );
