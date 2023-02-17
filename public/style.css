@@ -1,0 +1,45 @@
+
+html, body {
+  height: 100%;
+  background-image: url('https://i.imgur.com/kBdzOsl.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  padding: 10px 0;
+  text-align: center;
+  color: white !important;
+  text-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.player-img {
+  background-size: cover;
+  background-position: center;
+  width: calc((100vw / 7) - 50px);
+  height: calc((100vw / 7) - 50px);
+}
+
+.painel {
+  display: flex;
+  justify-content: center;
+}
+
+.painel > div {
+  background: white;
+  display: inline-flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 10px solid white;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.painel .btn {
+  width: 100%;
+  margin: 10px 0;
+}

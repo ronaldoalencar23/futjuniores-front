@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { api } from "../../utils/api";
 import toast from "react-hot-toast";
+import style from "./style.module.css";
 
 export function PlayerPage() {
   const params = useParams();
@@ -44,37 +45,40 @@ export function PlayerPage() {
 
   return (
     <>
-      <img src={player.image} alt={player.name} />
       <h1>{player.name}</h1>
-
-      <p>
-        <b>Características:</b> {player.characteristics}
-      </p>
-      <p>
-        <b>Posição:</b> {player.position}
-      </p>
-      <p>
-        <b>Idade:</b> {player.age} anos
-      </p>
-      <p>
-        <b>Altura:</b> {player.height}m
-      </p>
-      <p>
-        <b>Pé:</b> {player.foot}
-      </p>
-      <p>
-        <b>Nacionalidade:</b> {player.nationality}
-      </p>
-      <p>
-        <b>Tempo de contrato:</b> {player.contractTime} anos
-      </p>
-      <p>
-        <b>Valor de mercado:</b> {player.marketValue} mi. €
-      </p>
-      <Link to={`/edit-player/${params.playerId}`}>
-        <button>Editar</button>
-      </Link>
-      <button onClick={handleToast}>Deletar</button>
+      <div class="painel">
+        <div>
+          <img class="player-img" style={{ backgroundImage: 'url(' + player.image + ')' }} alt={player.name} />
+          <p>
+            <b>Características:</b> {player.characteristics}
+          </p>
+          <p>
+            <b>Posição:</b> {player.position}
+          </p>
+          <p>
+            <b>Idade:</b> {player.age} anos
+          </p>
+          <p>
+            <b>Altura:</b> {player.height}m
+          </p>
+          <p>
+            <b>Pé:</b> {player.foot}
+          </p>
+          <p>
+            <b>Nacionalidade:</b> {player.nationality}
+          </p>
+          <p>
+            <b>Tempo de contrato:</b> {player.contractTime} anos
+          </p>
+          <p>
+            <b>Valor de mercado:</b> {player.marketValue} mi. €
+          </p>
+          <Link to={`/edit-player/${params.playerId}`}>
+            <button class="btn btn-primary">Editar</button>
+          </Link>
+          <button class="btn btn-danger" onClick={handleToast}>Deletar</button>
+        </div>
+      </div>
     </>
   );
 }
