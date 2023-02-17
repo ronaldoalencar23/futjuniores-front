@@ -16,3 +16,6 @@ Para isso, basta preecher os seguintes campos:
 
 Depois disso, é só clicar 'Cadastrar'.
 Depois de concluído, o cadastro pode também ser atualizado ou excluído.
+
+Link do deploy: https://futjuniores.netlify.app/
+Link da apresentação: https://docs.google.com/presentation/d/1ffN8yvX2aXAFumu15K0smvJOlXwLDbZ_BjDVt1w2VMk/edit#slide=id.gc6f80d1ff_0_5
