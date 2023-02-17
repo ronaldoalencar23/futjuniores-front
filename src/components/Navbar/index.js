@@ -9,7 +9,7 @@ export function Navbar() {
       </Link>
 
       <Link to="/create">
-        <button>Cadastrar</button>
+        <button class="btn btn-primary">Cadastrar</button>
       </Link>
     </nav>
   );

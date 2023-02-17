@@ -4,6 +4,10 @@ nav {
   gap: 20px;
 }
 
+nav button {
+  margin-right: 20px;
+}
+
 h1 {
   font-size: 40px;
   margin-left: 20px;
